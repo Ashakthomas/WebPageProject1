@@ -1,0 +1,261 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+#container{
+        position: relative;
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-color:#608BC1;
+    }
+.bngimg{
+    width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+}
+#carouselExampleCaptions{
+    width: 80%;
+    height: auto;
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 10px;
+    margin-left: 150px;
+}
+.cimg {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+.carousel-item {
+    height: 600px; /* Set your desired height */
+}
+#about{
+    position: absolute;
+    display: flex; /* Flexbox to align children side by side */
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Ensure space between image and paragraph */
+    padding: 20px; /* Optional padding */
+    box-sizing: border-box; /* Ensures padding does not add extra width */
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
+}
+.about_content_para{
+    
+    box-sizing: border-box;
+    text-align: justify;
+}
+.about_img{
+    margin-left: 10px;
+}
+.itemimgp{
+    /* border: solid 1px; */
+    height: 400px ;
+}
+/* #menu{
+     margin-top: 550px;
+     
+} */
+.orderbt{
+        width: 100px;
+        text-decoration: none;
+        background-color: #dc3545;
+        color: white;
+        padding: 10px;
+        display: inline-block;
+        margin-left: 25%;
+        border-radius: 10px;
+}
+.order-content{
+    width: 100%;
+    height: 80%;
+    /* border: solid 1px; */
+    background-color: #F3F3E0;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+#reserved{
+    position: relative;
+    width: 100%;
+    display: flex;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
+}
+
+
+
+#contact{
+    position: absolute;
+    /* margin: 8% 8% 0px 8%; */
+    width: 100%;
+    /* height: 100%; */
+    background-color:  #f3f3e0;
+    /* border: solid 1px; */
+}
+.sectionHead{
+    text-align: center;
+}
+.iconCollections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,#dc3545,#608BC1,#f3f3e0);
+}
+.icon:hover .brands{
+    color: white;
+    /* animation */
+    animation: rotate 1s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+footer{
+    background-color:  #f3f3e0;
+    position: absolute;
+    margin-top: 12.7%;
+    /* border: solid 1px; */
+    width: 100%;
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.upArrow{
+    float: right;
+    margin: -40px 20px 20px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+#menu{
+    position: relative;
+    
+    flex-wrap: nowrap;
+    margin-top: 28rem;
+    
+    background-color: rgba(0, 0, 0, 0.877);
+}
+.container_text{
+    width:400px ;
+    height: 100px;
+    /* border: solid 1px; */
+    margin-left: 35rem;
+    color: white;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+.Order_box{
+    display: flex;
+}
+
+.item{
+    width: 300px;
+    height: 500px;
+    border: solid ;
+    margin: 10px;
+    background-color:#f3f3e0 ;
+}
+.group1{
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 40vh; /* Reduces height on smaller screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack content and image vertically */
+        padding: 15px;
+        text-align: center; /* Center text for smaller screens */
+    }
+    
+    .about_content {
+        padding: 0; /* Remove side padding */
+    }
+
+    .about_img {
+        margin-top: 15px; /* Add space between content and image */
+    }
+}
+
+
+
+
+@media (min-width: 768px) {
+    .about {
+        flex-direction: row; /* Change to row layout for larger screens */
+        justify-content: space-between; /* Space between content and image */
+    }
+
+    .about_content {
+        margin-bottom: 0; /* Remove bottom margin on larger screens */
+    }
+
+    .about_img {
+        flex: 1; /* Allow image to take available space */
+        display: flex; /* Use flex to center image */
+        justify-content: center; /* Center image */
+        align-items: center; /* Center image vertically */
+    }
+}
+
+@media (max-width:760px) {
+    #menu{
+        flex-wrap: wrap;
+    }
+}
